@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form(Js)</title>
+  </head>
+  <body>
+    <form onsubmit="getName()">
+      <input autofocus id="name" placeholder="Frst Name" type="text" />
+      <div>
+        <input type="number" placeholder="Number" id="num" />
+      </div>
+      <input type="submit" />
+    </form>
+    <script>
+      function getName() {
+        const firstName = document.querySelector("#name").value;
+        alert(`Hello ${firstName}`);
+        const num = document.querySelector("#num").value;
+        alert(num);
+      }
+      // document.querySelector("form").onsubmit = function () {
+      //   const firstName = document.querySelector("#name").value;
+      //   alert(`Hello ${firstName}`);
+      // };
+    </script>
+  </body>
+</html>

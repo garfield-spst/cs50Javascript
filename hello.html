@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>learnJs(Events)</title>
+  </head>
+  <body>
+    <h1>Hello Wolrd!!!</h1>
+    <button onclick="greeting()">Click Here</button>
+    <script>
+      //   function hello() {
+      //     alert("hello world");
+      //   }
+      function greeting() {
+        const bye = document.querySelector("h1");
+        if (bye.innerHTML === "Hello Wolrd!!!") {
+          bye.innerHTML = "Goodbye !!!";
+        } else {
+          bye.innerHTML = "Hello Wolrd!!!";
+        }
+      }
+    </script>
+  </body>
+</html>
